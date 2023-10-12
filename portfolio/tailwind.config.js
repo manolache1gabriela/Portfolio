@@ -4,7 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary': '#10002B',
+        'secondary': '#C8B6FF',
+        'tertiary': '#9D4EDD'
+      },
+      fontFamily: {
+        // 'poppins': ['Poppins'],
+      },
+    },
   },
   safelist: [
     {
