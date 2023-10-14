@@ -14,7 +14,10 @@ export default function Footer() {
                     <li><a className='hover:text-secondary' href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <p className='text-secondary text-[14px] mt-8 font-[Poppins] text-center md:text-right' >Inspiration: <a className=' hover:text-tertiary italic' target='blank' href="https://www.stefantopalovic.com/">Stefan Topalovic</a></p>
+            <p className='text-secondary text-[14px] mt-8 font-[Poppins] text-center md:text-right' >Inspiration: <br />
+                <a className=' hover:text-tertiary italic' target='blank' href="https://www.stefantopalovic.com">Stefan Topalovic</a> <br />
+                <a className=' hover:text-tertiary italic' target='blank' href="https://www.claudiupopa.ro">Claudiu Popa</a>
+            </p>
             <p className='text-slate-400 mt-4 text-[10px] font-[Poppins] text-center'>Copyright © 2023. All rights are reserved</p>
         </div>
     )

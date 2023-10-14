@@ -5,6 +5,9 @@ import reportWebVitals from './reportWebVitals';
 import Content from './components/Content';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,6 +15,9 @@ root.render(
     <div className='bg-primary'>
       <Navbar />
       <Content />
+      <About />
+      <Projects />
+      <Contact />
       <Footer />
     </div>
   </div>
