@@ -2,6 +2,7 @@ import React from 'react';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Stack from './Stack';
+import { faArrowUpRightFromSquare, faFile } from '@fortawesome/free-solid-svg-icons';
 
 export default function Content() {
     return (
@@ -55,6 +56,9 @@ export default function Content() {
                             </a>
                             <a target='blank' href="https://github.com/manolache1gabriela">
                                 <FontAwesomeIcon className='hover:text-secondary' icon={faGithub} />
+                            </a>
+                            <a href="/content/resume.pdf" target="_blank" class="hover:underline">
+                                <FontAwesomeIcon className=' hover:text-secondary' icon={faFile} />
                             </a>
                         </div>
                     </div>
