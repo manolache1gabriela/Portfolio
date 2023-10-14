@@ -6,12 +6,12 @@ export default function About() {
             <div className='flex w-[90%] lg:w-1/2 relative items-center justify-center mb-10 lg:mb-0 lg:mr-8'>
                 <img className='rounded-3xl md:w-3/4 lg:w-full' src="./assets/image.jpg" alt="laptop on table" />
                 <div className='w-48 h-48 absolute overflow-hidden bottom-[-40px] right-6 lg:right-[-4rem] hidden md:flex justify-center bg-white items-center rounded-full'>
-                    <img className='w-36 h-36' src="./assets/emoji.jpg" alt="emoji" />
+                    <img className='w-36 h-36 animate-pulse' src="./assets/emoji.jpg" alt="emoji" />
                 </div>
             </div>
             <div className='w-[90%] lg:w-1/2 flex flex-col xl:w-1/2 items-center lg:items-start py-6 gap-4' id='about'>
-                <h3 className='font-[Poppins] text-center lg:text-left text-2xl lg:text-3xl font-bold text-tertiary'>About me</h3>
-                <h4 className='font-[Poppins] text-secondary text-center lg:text-left lg:text-4xl text-3xl'>Highly skilled Front-End Developer, based in <br /> Iași, Romania <svg xmlns="http://www.w3.org/2000/svg" className='inline w-5 h-5 lg:w-7 lg:h-7' width="30" height="30" viewBox="0 0 30 30" fill="none">
+                <h3 className='font-poppins text-center lg:text-left text-2xl lg:text-3xl font-bold text-tertiary'>About me</h3>
+                <h4 className='font-poppins text-secondary text-center lg:text-left lg:text-4xl text-3xl'>Highly skilled Front-End Developer, based in <br /> Iași, Romania <svg xmlns="http://www.w3.org/2000/svg" className='inline w-5 h-5 lg:w-7 lg:h-7' width="30" height="30" viewBox="0 0 30 30" fill="none">
                     <path d="M8.47348 19.7763C8.601 19.6438 8.73351 19.5138 8.87353 19.3988C9.28107 19.0563 10.3437 18.2612 10.9163 18.5912C11.2563 18.7862 11.2063 19.4413 11.0813 19.7138C10.7712 20.3864 9.98115 20.954 9.4961 21.5116C9.11605 21.9541 8.656 22.3516 8.24095 22.7667C7.57588 23.4318 6.9383 24.1794 6.22072 24.7869C6.21822 24.7869 0.467556 29.6425 0.467556 29.6425L0.0200043 29.1949L4.87807 23.4393C5.79067 22.5267 6.70077 21.6141 7.61338 20.704C7.90841 20.4139 8.18345 20.0814 8.47348 19.7763Z" fill="url(#paint0_linear_11_68)" />
                     <path d="M8.47348 19.8313C7.33335 18.6037 6.32073 17.2735 5.49814 15.8959C4.87056 14.8458 3.4179 12.398 4.57803 11.2329L5.59315 10.2177C6.54576 9.26762 9.05355 10.1427 11.8389 12.203L18.1296 5.91224C16.5519 3.81949 15.8043 2.07679 16.3794 1.50173L17.662 0.216579C18.4971 -0.618517 21.8125 1.34171 25.0679 4.59708C28.3208 7.84996 30.2835 11.1678 29.4459 12.0029L28.1632 13.2856C27.5857 13.8607 25.843 13.1131 23.7527 11.5354L17.4645 17.8261C19.5248 20.6139 20.3999 23.1217 19.4497 24.0743L18.4346 25.0894C17.2345 26.2896 14.6767 24.7269 13.6091 24.0718C11.7664 22.9442 10.0062 21.4815 8.47348 19.8313Z" fill="url(#paint1_linear_11_68)" />
                     <path d="M29.4859 11.7154C28.7658 12.4355 25.5905 10.4328 22.3951 7.2374C19.1997 4.04203 17.197 0.869161 17.9171 0.146578C18.6372 -0.573506 21.8125 1.42923 25.0079 4.62459C28.2033 7.81996 30.206 10.9953 29.4859 11.7154Z" fill="#9329D4" />
@@ -36,7 +36,7 @@ export default function About() {
                         </linearGradient>
                     </defs>
                 </svg> </h4>
-                <p className='text-white text-center lg:text-lg lg:text-left text-md font-[Poppins]'>
+                <p className='text-white text-center lg:text-lg lg:text-left text-md font-poppins'>
                     I'm a Front-End Developer dedicated to crafting exceptional user experiences. Proficient in HTML, CSS, JavaScript, and React, I transform creative concepts into responsive, visually appealing web solutions. I thrive on collaboration and stay updated with industry trends to ensure innovative, clean, and intuitive designs. Let's team up to create a remarkable online presence!
                 </p>
             </div>

@@ -3,10 +3,31 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
 import MenuModal from './MenuModal';
+import { Link, animateScroll as scroll } from "react-scroll";
+import { CSSTransition } from "react-transition-group";
 
 export default function Navbar() {
 
     const [open, setOpen] = useState(false);
+
+    const links = [
+        {
+            name: 'Home',
+            path: 'home',
+        },
+        {
+            name: 'About',
+            path: 'about',
+        },
+        {
+            name: 'Projects',
+            path: 'projects',
+        },
+        {
+            name: 'Contact',
+            path: 'contact',
+        },
+    ];
 
     return (
         <div>
@@ -17,11 +38,17 @@ export default function Navbar() {
                             <a href="/">
                                 <img className='w-2/3 lg:w-3/4 h-12' src="./assets/logo.svg" alt="personal logo" />
                             </a>
-                            <ul className='lg:flex items-center gap-8 text-xl font-[Poppins] text-white hidden'>
-                                <li><a className='hover:text-secondary' href="/">Home</a></li>
-                                <li><a className='hover:text-secondary' href="#about">About</a></li>
-                                <li><a className='hover:text-secondary' href="#projects">Projects</a></li>
-                                <li><a className='hover:text-secondary' href="#contact">Contact</a></li>
+                            <ul className='lg:flex items-center gap-8 text-xl font-poppins text-white hidden'>
+                                {links.map(link => (
+                                    <Link
+                                        className='hover:text-secondary cursor-pointer'
+                                        to={`${link.path}`}
+                                        spy={true}
+                                        smooth={true}
+                                        offset={-100}
+                                        duration={500}
+                                    >{link.name}</Link>
+                                ))}
                             </ul>
                             <span className='text-secondary text-2xl lg:hidden'>
                                 {!open && <FontAwesomeIcon onClick={() => { setOpen(!open) }} icon={faBars} />}
@@ -31,7 +58,14 @@ export default function Navbar() {
                     </div>
                 </div>
             </div>
-            {open && <MenuModal />}
+            <CSSTransition
+                in={open}
+                timeout={300}
+                classNames='slide-vertical'
+                unmountOnExit
+            >
+                <MenuModal setOpen={setOpen} />
+            </CSSTransition>
         </div>
     )
 }

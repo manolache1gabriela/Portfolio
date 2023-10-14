@@ -11,7 +11,7 @@ module.exports = {
         'tertiary': '#9D4EDD'
       },
       fontFamily: {
-        // 'poppins': ['Poppins'],
+        'poppins': ['Poppins'],
       },
     },
   },

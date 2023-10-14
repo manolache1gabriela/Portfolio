@@ -15,7 +15,7 @@ export default function Contact() {
         },
         {
             name: 'Mail',
-            link: 'https://mail.google.com',
+            link: 'mailto: manolachegabriela23@gmail.com',
             linkData: 'manolachegabriela23@gmail.com',
             icon: faEnvelope,
         },
@@ -31,30 +31,18 @@ export default function Contact() {
             linkData: 'Manolache Gabriela',
             icon: faGithub,
         },
-        {
-            name: 'Facebook',
-            link: 'https://www.facebook.com/gabriela.manolache.739',
-            linkData: 'Gabriela Manolache',
-            icon: faFacebook,
-        },
-        {
-            name: 'Instagram',
-            link: 'https://www.instagram.com/mano.gabriela/',
-            linkData: 'mano.gabriela',
-            icon: faInstagram,
-        },
     ]
 
     return (
         <div className='flex flex-col w-full items-center gap-8 py-10 px-[5%]' id='contact'>
             <div className='w-[90%] flex flex-col gap-8'>
-                <h3 className='w-full font-[Poppins] text-center lg:text-left text-2xl lg:text-3xl font-bold text-tertiary'>Contact</h3>
+                <h3 className='w-full font-poppins text-center lg:text-left text-2xl lg:text-3xl font-bold text-tertiary'>Contact</h3>
                 <h4 className='w-full lg:text-xl text-white lg:text-left text-center mb-4'>Let's connect and create something amazing together!</h4>
             </div>
             <div className='flex flex-col md:flex-row flex-wrap items-center gap-4 md:justify-evenly text-3xl'>
                 {
                     contacts.map(contact => (
-                        <span className='flex items-center justify-center flex-col md:flex-row gap-4 font-[Poppins] mr-2'>
+                        <span className='flex items-center justify-center flex-col md:flex-row gap-4 font-poppins mr-2'>
                             <FontAwesomeIcon className='text-white text-5xl' icon={contact.icon} />
                             <div className='flex flex-col text-base md:text-xl gap-2'>
                                 <p className='text-tertiary text-center md:text-left font-semibold'>{contact.name}</p>
@@ -63,8 +51,6 @@ export default function Contact() {
                         </span>
                     ))
                 }
-
-
             </div>
         </div>
     )

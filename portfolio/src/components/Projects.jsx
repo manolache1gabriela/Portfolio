@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
+
 export default function Projects() {
 
     const projects = [
@@ -42,11 +43,11 @@ export default function Projects() {
 
     return (
         <div className='flex items-center flex-col gap-8 justify-center py-16' id='projects'>
-            <div className='text-white font-[Poppins] flex items-center flex-col gap-8 w-[90%]'>
-                <h3 className='w-full font-[Poppins] text-center lg:text-left text-2xl lg:text-3xl font-bold text-tertiary'>Portfolio</h3>
-                <p className='w-full text-lg lg:text-left text-center mb-4'>Discover my web developer portfolio, featuring a collection of dynamic websites and applications, where design meets functionality.</p>
+            <div className='text-white font-poppins flex items-center flex-col gap-8 w-[90%]'>
+                <h3 className='w-full font-poppins text-center lg:text-left text-2xl lg:text-3xl font-bold text-tertiary'>Portfolio</h3>
+                <p className='font-poppins text-secondary text-center w-full lg:text-left lg:text-4xl text-3xl'>Each task is a canvas of individual innovation &#127912;</p>
             </div>
-            <div className='w-[90%] flex flex-col lg:flex-row gap-8 font-[Poppins] flex-wrap'>
+            <div className='w-[90%] flex flex-col lg:flex-row gap-8 font-poppins flex-wrap'>
                 {
                     projects.map(project => (
                         <div className='w-full lg:w-[48%] border-2 border-secondary justify-between px-4 py-8 flex flex-col gap-6'>

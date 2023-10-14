@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div>
-    <div className='bg-primary'>
+    <div className='bg-primary scroll-smooth'>
       <Navbar />
       <Content />
       <About />
