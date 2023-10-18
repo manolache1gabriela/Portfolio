@@ -24,10 +24,10 @@ export default function Projects() {
             linkProject: 'https://dog-guesser.netlify.app',
         },
         {
-            name: 'To Do List',
+            name: 'Gifty',
             finished: 'In progress',
-            skills: ['React', 'Tailwind CSS', 'Redux'],
-            description: 'An app made intended to learn Redux, a to do list where you can add, check, remove or filter to do list items.',
+            skills: ['React', 'Tailwind CSS', 'Redux', 'TypeScript'],
+            description: 'An app, made in collaboration with a friend, where you can make a wishlist, from which your friends and family can claim a present to give you, or they can create their own wishlist.',
             linkRepo: 'https://github.com/manolache1gabriela/ToDoApp',
             linkProject: 'when finished',
         },
