@@ -28,7 +28,7 @@ export default function Projects() {
             finished: 'In progress',
             skills: ['React', 'Tailwind CSS', 'Redux', 'TypeScript'],
             description: 'An app, made in collaboration with a friend, where you can make a wishlist, from which your friends and family can claim a present to give you, or they can create their own wishlist.',
-            linkRepo: 'https://github.com/manolache1gabriela/ToDoApp',
+            linkRepo: 'https://github.com/manolache1gabriela/Gifty',
             linkProject: 'when finished',
         },
         {
