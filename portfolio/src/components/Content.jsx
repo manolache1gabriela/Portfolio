@@ -62,7 +62,7 @@ export default function Content() {
                             </a>
                         </div>
                     </div>
-                    <div className='w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 border-4 overflow-hidden border-secondary rounded-full flex justify-center items-center'>
+                    <div className='w-60 h-60 md:w-80 md:h-80 lg:w-96 lg:h-96 border-4 overflow-hidden border-secondary animate-border flex justify-center items-center'>
                         <img className='w-full' src="./assets/foto.jpg" alt="personal portrait" />
                     </div>
                 </div>

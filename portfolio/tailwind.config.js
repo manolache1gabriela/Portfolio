@@ -13,6 +13,25 @@ module.exports = {
       fontFamily: {
         'poppins': ['Poppins'],
       },
+      keyframes:{
+        border:{
+          '0%' :{
+            'border-top-left-radius':'60%',
+            'border-top-right-radius':'70%',
+            'border-bottom-right-radius':'40%',
+            'border-bottom-left-radius':'70%',
+          },
+          '100%' :{
+            'border-top-left-radius':'70%',
+            'border-top-right-radius':'40%',
+            'border-bottom-right-radius':'60%',
+            'border-bottom-left-radius':'50%',
+          },
+        }
+      },
+      animation:{
+        border: 'border 5s ease-in-out alternate infinite',
+      }
     },
   },
   safelist: [
