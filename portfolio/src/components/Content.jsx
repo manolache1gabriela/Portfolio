@@ -70,7 +70,7 @@ export default function Content() {
             <h2 className='text-white text-lg md:text-2xl xl:text-3xl font-poppins'>
               Hello, my name is{' '}
               <span className='text-secondary'>Gabriela Manolache</span>. <br />{' '}
-              I'm a passionate Front-End React Developer based in Iași, Romania.{' '}
+              I'm a passionate Front-End React Developer based in Romania.{' '}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 className='inline w-5 h-5 lg:w-7 lg:h-7'
