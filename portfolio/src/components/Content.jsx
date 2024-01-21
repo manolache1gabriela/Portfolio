@@ -7,14 +7,13 @@ import { faFile } from '@fortawesome/free-solid-svg-icons';
 export default function Content() {
   return (
     <div
-      className='bg-primary w-full flex justify-center items-center py-10 lg:py-[10%]'
+      className='bg-primary w-full flex justify-center items-center py-10 lg:py-[10%] xl:pt-[7%]'
       id='home'>
       <div className='w-3/4 lg:w-[85%] xl:w-[67%] h-3/4 flex flex-col gap-8 justify-center items-center'>
         <div className='w-full lg:mb-0 flex flex-col-reverse lg:flex-row gap-8 lg:gap-0 justify-center lg:justify-between items-center'>
           <div className='w-full lg:w-[55%] xl:w-3/5 flex flex-col gap-8 justify-center items-center lg:items-start text-center lg:text-left'>
             <h1 className='text-secondary text-3xl md:text-4xl xl:text-6xl font-semibold font-poppins'>
-              Front-End React
-              <br />
+              Front-End {/* <br /> */}
               Developer{' '}
               <span>
                 <svg
@@ -70,12 +69,12 @@ export default function Content() {
             <h2 className='text-white text-lg md:text-2xl xl:text-3xl font-poppins'>
               Hello, my name is{' '}
               <span className='text-secondary'>Gabriela Manolache</span>. <br />{' '}
-              I'm a passionate Front-End React Developer based in Romania.{' '}
+              I'm a passionate Front-End Developer based in Romania.{' '}
               <svg
                 xmlns='http://www.w3.org/2000/svg'
-                className='inline w-5 h-5 lg:w-7 lg:h-7'
                 width='30'
                 height='30'
+                className='inline w-5 h-5 lg:w-7 lg:h-7'
                 viewBox='0 0 30 30'
                 fill='none'>
                 <path
@@ -88,11 +87,11 @@ export default function Content() {
                 />
                 <path
                   d='M29.4859 11.7154C28.7658 12.4355 25.5905 10.4328 22.3951 7.2374C19.1997 4.04203 17.197 0.869161 17.9171 0.146578C18.6372 -0.573506 21.8125 1.42923 25.0079 4.62459C28.2033 7.81996 30.206 10.9953 29.4859 11.7154Z'
-                  fill='#9329D4'
+                  fill='#00509D'
                 />
                 <path
                   d='M19.5823 23.9068C18.6872 24.8019 14.8742 22.4441 11.0688 18.6387C7.26334 14.8333 4.90306 11.0203 5.79817 10.1252C6.69327 9.23012 10.6637 10.4528 14.9842 14.8408C19.1747 19.0938 20.4774 23.0117 19.5823 23.9068Z'
-                  fill='#9329D4'
+                  fill='#00509D'
                 />
                 <path
                   d='M10.8863 12.9556L18.1296 5.91225C18.1296 5.91225 19.4998 7.72496 20.5424 8.78758C21.585 9.8502 23.7577 11.5379 23.7577 11.5379L16.7269 18.5662C16.7269 18.5662 15.1918 17.9536 13.4316 16.1934C11.3813 14.1457 10.8863 12.9556 10.8863 12.9556Z'
@@ -125,7 +124,7 @@ export default function Content() {
                     x2='23.9853'
                     y2='19.4423'
                     gradientUnits='userSpaceOnUse'>
-                    <stop offset='0.0048445' stop-color='#C336F4' />
+                    <stop offset='0.0048445' stop-color='#004384' />
                   </linearGradient>
                   <linearGradient
                     id='paint2_linear_11_68'
@@ -134,11 +133,11 @@ export default function Content() {
                     x2='19.9901'
                     y2='15.2626'
                     gradientUnits='userSpaceOnUse'>
-                    <stop offset='0.3689' stop-color='#9329D4' />
-                    <stop offset='0.885417' stop-color='#9329D4' />
+                    <stop offset='0.3689' stop-color='#00509D' />
+                    <stop offset='0.885417' stop-color='#0073E1' />
                   </linearGradient>
                 </defs>
-              </svg>{' '}
+              </svg>
             </h2>
             <div className='flex gap-4 text-white text-3xl'>
               <a
