@@ -4,19 +4,25 @@
 @tailwind utilities;
 
 .slide-vertical-enter {
-    opacity: 0;
+  opacity: 0;
 }
 
 .slide-vertical-enter-active {
-    opacity: 1;
-    transition: all 300ms;
+  opacity: 1;
+  transition: all 300ms;
 }
 
 .slide-vertical-exit {
-    opacity: 1;
+  opacity: 1;
 }
 
 .slide-vertical-exit-active {
-    opacity: 0;
-    transition: all 300ms;
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #dda955 !important;
 }

@@ -3,7 +3,6 @@ import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import React from 'react';
-import 'swiper/css';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -28,7 +27,7 @@ export default function SwiperCards({ projects, cardsNumber }) {
         clickable: true,
       }}
       autoplay={{
-        delay: 30000,
+        delay: 32000,
         disableOnInteraction: false,
       }}
       slidesPerView={cardsNumber}
