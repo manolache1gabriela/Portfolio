@@ -41,8 +41,8 @@ export default function SwiperCards({ projects, cardsNumber }) {
       navigation={true}
       modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
       className='mySwiper w-full'>
-      {projects.map((project) => (
-        <SwiperSlide className='border-4 border-secondary h-full'>
+      {projects.map((project, index) => (
+        <SwiperSlide key={index} className='border-4 border-secondary h-full'>
           <div className='w-full h-full justify-between px-4 py-8 flex flex-col gap-6'>
             <div>
               <video
@@ -51,7 +51,7 @@ export default function SwiperCards({ projects, cardsNumber }) {
                 autoPlay
                 muted
                 preload='none'
-                playsinline
+                playsInline
                 loop
                 type='video/mp4'></video>
             </div>
@@ -60,11 +60,13 @@ export default function SwiperCards({ projects, cardsNumber }) {
                 {project.name}{' '}
                 <span className='text-secondary text-lg'>{`(${project.finished})`}</span>
               </h4>
-              <p className='text-white text-lg'>{project.description}</p>
+              <div className='text-white text-lg'>{project.description}</div>
             </div>
             <div className='flex gap-4 flex-wrap'>
-              {project.skills.map((skill) => (
-                <div className='border-2 bg-white bg-opacity-20 border-tertiary w-[45%] md:w-[30%] flex items-center justify-center h-10 rounded-xl'>
+              {project.skills.map((skill, index) => (
+                <div
+                  key={index}
+                  className='border-2 bg-white bg-opacity-20 border-tertiary w-[45%] md:w-[30%] flex items-center justify-center h-10 rounded-xl'>
                   <span className='text-white hover:text-secondary'>
                     {skill}
                   </span>

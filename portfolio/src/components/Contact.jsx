@@ -45,8 +45,10 @@ export default function Contact() {
         </h4>
       </div>
       <div className='flex flex-col md:flex-row flex-wrap items-center gap-4 md:justify-evenly text-3xl'>
-        {contacts.map((contact) => (
-          <span className='flex items-center justify-center flex-col md:flex-row gap-4 font-poppins mr-2'>
+        {contacts.map((contact, index) => (
+          <span
+            key={index}
+            className='flex items-center justify-center flex-col md:flex-row gap-4 font-poppins mr-2'>
             <FontAwesomeIcon
               className='text-white text-5xl'
               icon={contact.icon}

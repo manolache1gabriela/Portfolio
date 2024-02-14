@@ -65,12 +65,12 @@ export default function About() {
                 x2='6.38824'
                 y2='24.8044'
                 gradientUnits='userSpaceOnUse'>
-                <stop stop-color='#F5F5F5' />
-                <stop offset='0.1455' stop-color='#EFEFEF' />
-                <stop offset='0.3368' stop-color='#DFDFDF' />
-                <stop offset='0.5535' stop-color='#C3C3C3' />
-                <stop offset='0.7872' stop-color='#9E9E9E' />
-                <stop offset='1' stop-color='#757575' />
+                <stop stopColor='#F5F5F5' />
+                <stop offset='0.1455' stopColor='#EFEFEF' />
+                <stop offset='0.3368' stopColor='#DFDFDF' />
+                <stop offset='0.5535' stopColor='#C3C3C3' />
+                <stop offset='0.7872' stopColor='#9E9E9E' />
+                <stop offset='1' stopColor='#757575' />
               </linearGradient>
               <linearGradient
                 id='paint1_linear_11_68'
@@ -79,7 +79,7 @@ export default function About() {
                 x2='23.9853'
                 y2='19.4423'
                 gradientUnits='userSpaceOnUse'>
-                <stop offset='0.0048445' stop-color='#004384' />
+                <stop offset='0.0048445' stopColor='#004384' />
               </linearGradient>
               <linearGradient
                 id='paint2_linear_11_68'
@@ -88,8 +88,8 @@ export default function About() {
                 x2='19.9901'
                 y2='15.2626'
                 gradientUnits='userSpaceOnUse'>
-                <stop offset='0.3689' stop-color='#00509D' />
-                <stop offset='0.885417' stop-color='#0073E1' />
+                <stop offset='0.3689' stopColor='#00509D' />
+                <stop offset='0.885417' stopColor='#0073E1' />
               </linearGradient>
             </defs>
           </svg>{' '}

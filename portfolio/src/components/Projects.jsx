@@ -2,6 +2,21 @@ import React, { useEffect, useState } from 'react';
 import SwiperCards from './SwiperCards';
 import useWindowSize from '../hooks/useWindowSize';
 export default function Projects() {
+  const giftyText = (
+    <div>
+      An app, made in collaboration with a friend, where you can make a
+      wishlist, from which your friends and family can claim a present to give
+      you, or they can create their own wishlist.
+      <br />
+      <div className='text-secondary mt-2'>
+        Demo account: <br />
+        <div className='flex gap-5'>
+          <span>email: test12@test.com</span>
+          <span>password: test123</span>{' '}
+        </div>
+      </div>
+    </div>
+  );
   const projects = [
     {
       name: 'Audiophile',
@@ -27,10 +42,9 @@ export default function Projects() {
       name: 'Gifty',
       finished: 'In progress',
       skills: ['React', 'Tailwind CSS', 'TypeScript'],
-      description:
-        'An app, made in collaboration with a friend, where you can make a wishlist, from which your friends and family can claim a present to give you, or they can create their own wishlist.',
+      description: giftyText,
       linkRepo: 'https://github.com/manolache1gabriela/Gifty',
-      linkProject: 'when finished',
+      linkProject: 'https://gifty-app.netlify.app',
       video: './assets/coming_soon.mp4',
     },
     {
