@@ -21,8 +21,8 @@ module.exports = {
           },
           '100%': {
             'border-top-left-radius': '70%',
-            'border-top-right-radius': '40%',
-            'border-bottom-right-radius': '60%',
+            'border-top-right-radius': '50%',
+            'border-bottom-right-radius': '50%',
             'border-bottom-left-radius': '50%',
           },
         },

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   const links = [
     {
       name: 'Home',
@@ -53,17 +55,17 @@ export default function Footer() {
           target='blank'
           href='https://www.stefantopalovic.com'>
           Stefan Topalovic
-        </a>{' '}
-        <br />
+        </a>
+        {/* <br />
         <a
           className=' hover:text-tertiary italic'
           target='blank'
           href='https://www.claudiupopa.ro'>
           Claudiu Popa
-        </a>
+        </a> */}
       </p>
       <p className='text-slate-400 mt-4 text-[10px] font-poppins text-center'>
-        Copyright © 2023. All rights are reserved
+        Copyright © {year}. All rights are reserved
       </p>
     </div>
   );
