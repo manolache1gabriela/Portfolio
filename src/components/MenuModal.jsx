@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-scroll';
 
 
-export default function MenuModal({ setOpen }) {
+export default function MenuModal({ setOpen, open }) {
 
     const links = [
         {
@@ -25,9 +25,9 @@ export default function MenuModal({ setOpen }) {
 
     return (
         <div className='flex flex-col'>
-            <div className=' bg-white bg-opacity-5 flex items-center justify-center w-full py-4'>
+            <div className={open ? 'nav-open bg-[#182639] h-[90vh] flex items-center justify-center w-full py-4' : ' '}>
                 <ul className='flex flex-col items-center gap-4 text-2xl font-poppins text-white '>
-                    {links.map(link => (
+                    {links.map((link, index) => (
                         <Link
                             onClick={() => { setOpen(false) }}
                             className='hover:text-secondary cursor-pointer'
@@ -36,6 +36,7 @@ export default function MenuModal({ setOpen }) {
                             smooth={true}
                             offset={-100}
                             duration={500}
+                            key={index}
                         >{link.name}</Link>
                     ))}
                 </ul>

@@ -26,3 +26,16 @@
   height: 15px !important;
   background-color: #dda955 !important;
 }
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+}
+
+body:has(.nav-open) {
+	overflow: hidden;
+}

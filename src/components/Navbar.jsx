@@ -4,7 +4,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
 import MenuModal from './MenuModal';
 import { Link } from 'react-scroll';
-import { CSSTransition } from 'react-transition-group';
 
 export default function Navbar() {
 	const [open, setOpen] = useState(false);
@@ -77,13 +76,9 @@ export default function Navbar() {
 					</div>
 				</div>
 			</div>
-			<CSSTransition
-				in={open}
-				timeout={300}
-				classNames='slide-vertical'
-				unmountOnExit>
-				<MenuModal setOpen={setOpen} />
-			</CSSTransition>
+			{open &&
+				<MenuModal setOpen={setOpen} open={open} />
+			}
 		</div>
 	);
 }
